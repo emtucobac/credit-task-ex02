@@ -1,0 +1,42 @@
+﻿@model ex2.Models.Agent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Agent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.agentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

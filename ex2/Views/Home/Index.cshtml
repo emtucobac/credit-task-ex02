@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MVC</h1>
+    <p class="lead">Welcome to project</p>
+
+    <div>
+        <div class="row">
+            <p>
+                @Html.ActionLink("Item List", "Index", "Items");
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                @Html.ActionLink("Agent List", "Index", "Agents");
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                @Html.ActionLink("Order List", "Index", "Orders");
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                @Html.ActionLink("Order_Detail List", "Index", "order_Detail");
+            </p>
+        </div>
+    </div>
+</div>
+
